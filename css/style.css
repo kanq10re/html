@@ -4,36 +4,36 @@ body {
   padding: 0;
 }
 
-.responsive-color-grid {
+.color-switch-grid {
   display: grid;
   gap: 2px;
   margin: 20px auto;
   width: fit-content;
 }
 
-.responsive-color-grid div {
+.color-switch-grid div {
   background-color: #ffffff;
 }
 
 @media (max-width: 600px) {
-  .responsive-color-grid {
+  .color-switch-grid {
     grid-template-columns: repeat(2, 80px);
     grid-template-rows: repeat(3, 40px);
   }
-  .responsive-color-grid div:nth-child(3),
-  .responsive-color-grid div:nth-child(4) {
+  .color-switch-grid div:nth-child(3),
+  .color-switch-grid div:nth-child(4) {
     background-color: #000000;
   }
 }
 
 @media (min-width: 601px) {
-  .responsive-color-grid {
+  .color-switch-grid {
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: repeat(2, 40px);
   }
-  .responsive-color-grid div:nth-child(4),
-  .responsive-color-grid div:nth-child(5),
-  .responsive-color-grid div:nth-child(6) {
+  .color-switch-grid div:nth-child(4),
+  .color-switch-grid div:nth-child(5),
+  .color-switch-grid div:nth-child(6) {
     background-color: #000000;
   }
 }
